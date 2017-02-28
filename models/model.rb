@@ -29,10 +29,6 @@ def problem_selector(unit)
            "Use a while statement to write a program that prints 100 lines that alternate between 'She loves me' and 'She loves me not'.",
            "Write a program that prompts the user to enter a word in English and then prints the equivalent word in Spanish.\nThe program should use a dictionary to store information about how various words are translated.\nDo not worry about what happens if the user enters a word that is not in the dictionary."
            ]
-        4=>[
-           "asdf"
-            
-            ]
    } 
     return unit_hash[unit].sample
 end
