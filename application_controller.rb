@@ -9,7 +9,12 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/result' do
-    erb :result
+    if(password_checker(params[:password].to_i))
+      @message = problem_selector(params[:unit].to_i)
+    else
+      @message = "Wrong password"
+    end
+     erb :result
   end
 
 end
